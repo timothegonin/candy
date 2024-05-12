@@ -1,4 +1,4 @@
-const store = {
+export const store = {
   Chamallows : {
     number : 510,
   },
@@ -11,4 +11,12 @@ const store = {
   Dragibus : {
     number : 510,
   },
+}
+
+const buyCandies = (candiesStore, numberOfCandiesToRemove) => {
+  return candiesStore - numberOfCandiesToRemove
+}
+
+export default{
+  buyCandies
 }
