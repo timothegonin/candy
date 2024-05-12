@@ -16,7 +16,11 @@ export const store = {
 const buyCandies = (candiesStore, numberOfCandiesToRemove) => {
   return candiesStore - numberOfCandiesToRemove
 }
+const addCandies = (candiesStore, numberOfCandiesToAdd) => {
+  return candiesStore + numberOfCandiesToAdd
+}
 
 export default{
-  buyCandies
+  buyCandies,
+  addCandies
 }
